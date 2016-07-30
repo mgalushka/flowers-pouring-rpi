@@ -11,7 +11,7 @@ class ServoControl:
       self.pwm.start(5)
 
     def updateAngle(self, angle):
-        pwm.ChangeDutyCycle(angle)
+        self.pwm.ChangeDutyCycle(angle)
 
 if __name__ == '__main__':
     servo = ServoControl()
