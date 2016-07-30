@@ -5,7 +5,7 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(18, GPIO.OUT)
 
 class ServoControl:
-    def __init__(self, master):
+    def __init__(self):
       self.pwm = GPIO.PWM(18, 100)
       self.pwm.start(5)
 
